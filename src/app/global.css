@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Navbar and Sidebar Toggoling */
+.nav-screen .side-bar {
+  display: none;
+}
+
+.nav-screen .nav-bar {
+  display: flex;
+}
+
+@media (max-width: 1024px) {
+  .nav-screen .nav-bar {
+    display: none;
+  }
+
+  .nav-screen .side-bar {
+    display: flex;
+  }
+}
+
+/* Swiper re-configurations */
+
+.swiper-pagination-bullet {
+  background-color: white !important;
+  opacity: 1 !important;
+  width: 12px !important;
+  height: 12px !important;
+}
+
+.latest-release .swiper-pagination-bullet {
+  display: none !important;
+}
+
+.trending-movies .swiper-pagination-bullet {
+  display: none !important;
+}
+
+.swiper-pagination-bullet-active {
+  width: 14px !important;
+  height: 14px !important;
+  background-color: #7300ff !important;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: "" !important;
+  display: none !important;
+}
+
+.default-swipper .swiper-button-prev {
+  background-image: url("/icons/Left.svg") !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40px 40px;
+  width: 80px !important;
+  height: 80px !important;
+  top: unset !important;
+  bottom: 0px;
+  right: 75px;
+  left: unset !important;
+}
+
+.default-swipper .swiper-button-next {
+  background-image: url("/icons/right-arrow.svg") !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40px 40px;
+  width: 80px !important;
+  height: 80px !important;
+  right: 25px !important;
+  top: unset !important;
+  bottom: 0;
+}
+
+.react-international-phone-input {
+  background: transparent !important;
+  color: white !important;
+  border: 1px solid #7300ff !important;
+}
+
+.react-international-phone-country-selector-button {
+  background: transparent !important;
+  color: white !important;
+  border: 1px solid #7300ff !important;
+  padding: 5px !important;
+}
